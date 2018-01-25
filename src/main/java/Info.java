@@ -18,16 +18,29 @@ public class Info
     private String WRHF0U8G_2120250746_A_Ms_Vol;
     private String WRHF0U8G_2120250746_A_Ms_Watt;
     private String WRHF0U8G_2120250746_GridMs_PhV_phsA;
+    private String WRHF0U8G_2120250746_GridMs_W_phsA;
     private String WRHF0U8G_2120250746_Pac;
     private String WRST1Y5D_305001998_A_Ms_Amp;
     private String WRST1Y5D_305001998_A_Ms_Vol;
     private String WRST1Y5D_305001998_A_Ms_Watt;
     private String WRST1Y5D_305001998_GridMs_PhV_phsA;
+    private String WRST1Y5D_305001998_GridMs_PhV_phsB;
+    private String WRST1Y5D_305001998_GridMs_PhV_phsC;
+    private String WRST1Y5D_305001998_GridMs_W_phsA;
+    private String WRST1Y5D_305001998_GridMs_W_phsB;
+    private String WRST1Y5D_305001998_GridMs_W_phsC;
     private String WRST1Y5D_305001998_Pac;
     private String WRST285D_305022216_A_Ms_Amp;
     private String WRST285D_305022216_A_Ms_Vol;
     private String WRST285D_305022216_A_Ms_Watt;
     private String WRST285D_305022216_GridMs_PhV_phsA;
+    private String WRST285D_305022216_GridMs_PhV_phsB;
+    private String WRST285D_305022216_GridMs_PhV_phsC;
+    private String WRST285D_305022216_GridMs_W_phsA;
+    private String WRST285D_305022216_GridMs_W_phsB;
+    private String WRST285D_305022216_GridMs_W_phsC;
+
+
     private String WRST285D_305022216_Pac;
 
     public Info() {
@@ -57,16 +70,27 @@ public class Info
         this.setWRHF0U8G_2120250746_A_Ms_Vol(newline[82].trim());
         this.setWRHF0U8G_2120250746_A_Ms_Watt(newline[83].trim());
         this.setWRHF0U8G_2120250746_GridMs_PhV_phsA(newline[90].trim());
+        this.setWRHF0U8G_2120250746_GridMs_W_phsA(newline[95].trim());
         this.setWRHF0U8G_2120250746_Pac(newline[110].trim());
         this.setWRST1Y5D_305001998_A_Ms_Amp(newline[113].trim());
         this.setWRST1Y5D_305001998_A_Ms_Vol(newline[114].trim());
         this.setWRST1Y5D_305001998_A_Ms_Watt(newline[115].trim());
         this.setWRST1Y5D_305001998_GridMs_PhV_phsA(newline[128].trim());
+        this.setWRST1Y5D_305001998_GridMs_PhV_phsB(newline[129].trim());
+        this.setWRST1Y5D_305001998_GridMs_PhV_phsC(newline[130].trim());
+        this.setWRST1Y5D_305001998_GridMs_W_phsA(newline[140].trim());
+        this.setWRST1Y5D_305001998_GridMs_W_phsB(newline[141].trim());
+        this.setWRST1Y5D_305001998_GridMs_W_phsC(newline[142].trim());
         this.setWRST1Y5D_305001998_Pac(newline[154].trim());
         this.setWRST285D_305022216_A_Ms_Amp(newline[158].trim());
         this.setWRST285D_305022216_A_Ms_Vol(newline[159].trim());
         this.setWRST285D_305022216_A_Ms_Watt(newline[160].trim());
         this.setWRST285D_305022216_GridMs_PhV_phsA(newline[173].trim());
+        this.setWRST285D_305022216_GridMs_PhV_phsB(newline[174].trim());
+        this.setWRST285D_305022216_GridMs_PhV_phsC(newline[175].trim());
+        this.setWRST285D_305022216_GridMs_W_phsA(newline[185].trim());
+        this.setWRST285D_305022216_GridMs_W_phsB(newline[186].trim());
+        this.setWRST285D_305022216_GridMs_W_phsC(newline[187].trim());
         this.setWRST285D_305022216_Pac(newline[199].trim());
     }
 
@@ -275,7 +299,7 @@ public class Info
         s = s.concat(";");
         s = s.concat(this.getWRHF0U8G_2120250746_GridMs_PhV_phsA());
         s = s.concat(";");
-        s = s.concat(this.getWRHF0U8G_2120250746_Pac());
+        s = s.concat(this.getWRHF0U8G_2120250746_GridMs_W_phsA());
         return s;
     }
 
@@ -296,7 +320,16 @@ public class Info
         s = s.concat(";");
         s = s.concat(this.getWRST1Y5D_305001998_GridMs_PhV_phsA());
         s = s.concat(";");
-        s = s.concat(this.getWRST1Y5D_305001998_Pac());
+        s = s.concat(this.getWRST1Y5D_305001998_GridMs_PhV_phsB());
+        s = s.concat(";");
+        s = s.concat(this.getWRST1Y5D_305001998_GridMs_PhV_phsC());
+        s = s.concat(";");
+        s = s.concat(this.getWRST1Y5D_305001998_GridMs_W_phsA());
+        s = s.concat(";");
+        s = s.concat(this.getWRST1Y5D_305001998_GridMs_W_phsB());
+        s = s.concat(";");
+        s = s.concat(this.getWRST1Y5D_305001998_GridMs_W_phsC());
+
         return s;
     }
 
@@ -317,7 +350,17 @@ public class Info
         s = s.concat(";");
         s = s.concat(this.getWRST285D_305022216_GridMs_PhV_phsA());
         s = s.concat(";");
-        s = s.concat(this.getWRST285D_305022216_Pac());
+        s = s.concat(this.getWRST285D_305022216_GridMs_PhV_phsB());
+        s = s.concat(";");
+        s = s.concat(this.getWRST285D_305022216_GridMs_PhV_phsC());
+        s = s.concat(";");
+        s = s.concat(this.getWRST285D_305022216_GridMs_W_phsA());
+        s = s.concat(";");
+        s = s.concat(this.getWRST285D_305022216_GridMs_W_phsB());
+        s = s.concat(";");
+        s = s.concat(this.getWRST285D_305022216_GridMs_W_phsC());
+
+
         return s;
     }
 
@@ -341,4 +384,98 @@ public class Info
     public void setYear(String year) {
         this.year = year;
     }
+
+
+
+
+    public String getWRST285D_305022216_GridMs_PhV_phsB() {
+        return WRST285D_305022216_GridMs_PhV_phsB;
+    }
+
+    public void setWRST285D_305022216_GridMs_PhV_phsB(String WRST285D_305022216_GridMs_PhV_phsB) {
+        this.WRST285D_305022216_GridMs_PhV_phsB = WRST285D_305022216_GridMs_PhV_phsB;
+    }
+
+    public String getWRST285D_305022216_GridMs_PhV_phsC() {
+        return WRST285D_305022216_GridMs_PhV_phsC;
+    }
+
+    public void setWRST285D_305022216_GridMs_PhV_phsC(String WRST285D_305022216_GridMs_PhV_phsC) {
+        this.WRST285D_305022216_GridMs_PhV_phsC = WRST285D_305022216_GridMs_PhV_phsC;
+    }
+
+    public String getWRST285D_305022216_GridMs_W_phsA() {
+        return WRST285D_305022216_GridMs_W_phsA;
+    }
+
+    public void setWRST285D_305022216_GridMs_W_phsA(String WRST285D_305022216_GridMs_W_phsA) {
+        this.WRST285D_305022216_GridMs_W_phsA = WRST285D_305022216_GridMs_W_phsA;
+    }
+
+    public String getWRST285D_305022216_GridMs_W_phsB() {
+        return WRST285D_305022216_GridMs_W_phsB;
+    }
+
+    public void setWRST285D_305022216_GridMs_W_phsB(String WRST285D_305022216_GridMs_W_phsB) {
+        this.WRST285D_305022216_GridMs_W_phsB = WRST285D_305022216_GridMs_W_phsB;
+    }
+
+    public String getWRST285D_305022216_GridMs_W_phsC() {
+        return WRST285D_305022216_GridMs_W_phsC;
+    }
+
+    public void setWRST285D_305022216_GridMs_W_phsC(String WRST285D_305022216_GridMs_W_phsC) {
+        this.WRST285D_305022216_GridMs_W_phsC = WRST285D_305022216_GridMs_W_phsC;
+    }
+
+    public String getWRHF0U8G_2120250746_GridMs_W_phsA() {
+        return WRHF0U8G_2120250746_GridMs_W_phsA;
+    }
+
+    public void setWRHF0U8G_2120250746_GridMs_W_phsA(String WRHF0U8G_2120250746_GridMs_W_phsA) {
+        this.WRHF0U8G_2120250746_GridMs_W_phsA = WRHF0U8G_2120250746_GridMs_W_phsA;
+    }
+    public String getWRST1Y5D_305001998_GridMs_PhV_phsB() {
+        return WRST1Y5D_305001998_GridMs_PhV_phsB;
+    }
+
+    public void setWRST1Y5D_305001998_GridMs_PhV_phsB(String WRST1Y5D_305001998_GridMs_PhV_phsB) {
+        this.WRST1Y5D_305001998_GridMs_PhV_phsB = WRST1Y5D_305001998_GridMs_PhV_phsB;
+    }
+
+    public String getWRST1Y5D_305001998_GridMs_PhV_phsC() {
+        return WRST1Y5D_305001998_GridMs_PhV_phsC;
+    }
+
+    public void setWRST1Y5D_305001998_GridMs_PhV_phsC(String WRST1Y5D_305001998_GridMs_PhV_phsC) {
+        this.WRST1Y5D_305001998_GridMs_PhV_phsC = WRST1Y5D_305001998_GridMs_PhV_phsC;
+    }
+
+    public String getWRST1Y5D_305001998_GridMs_W_phsA() {
+        return WRST1Y5D_305001998_GridMs_W_phsA;
+    }
+
+    public void setWRST1Y5D_305001998_GridMs_W_phsA(String WRST1Y5D_305001998_GridMs_W_phsA) {
+        this.WRST1Y5D_305001998_GridMs_W_phsA = WRST1Y5D_305001998_GridMs_W_phsA;
+    }
+
+    public String getWRST1Y5D_305001998_GridMs_W_phsB() {
+        return WRST1Y5D_305001998_GridMs_W_phsB;
+    }
+
+    public void setWRST1Y5D_305001998_GridMs_W_phsB(String WRST1Y5D_305001998_GridMs_W_phsB) {
+        this.WRST1Y5D_305001998_GridMs_W_phsB = WRST1Y5D_305001998_GridMs_W_phsB;
+    }
+
+    public String getWRST1Y5D_305001998_GridMs_W_phsC() {
+
+        return WRST1Y5D_305001998_GridMs_W_phsC;
+    }
+
+    public void setWRST1Y5D_305001998_GridMs_W_phsC(String WRST1Y5D_305001998_GridMs_W_phsC) {
+        this.WRST1Y5D_305001998_GridMs_W_phsC = WRST1Y5D_305001998_GridMs_W_phsC;
+    }
+
+
+
 }

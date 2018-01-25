@@ -75,7 +75,7 @@ public class FilesCreator {
                 bw1.newLine();
                 bw2.write("Date Locale;Gipm (w par m\u00b2);Tam (\u00b0C);Va (V);Ia (A);Pa (Kw);Tm (\u00b0C);WindSpeed (m par s);AC-U L1 (V);AC-U L2 (V);AC-U L3 (V);AC-P L1 (W);AC-P L2 (W);AC-P L3 (W)");
                 bw2.newLine();
-                bw3.write("Date Locale;Gipm (w par m\u00b2);Tam (\u00b0C);Va (V);Ia (A);Pa (Kw);Tm (\u00b0C);WindSpeed (m par s);AC-U L1 (V);AC-U L2 (V);AC-U L3 (V);AC-P L1 (W);AC-P L2 (W);AC-P L3 (W)");
+                bw3.write("Date Locale;Gipm (w par m\u00b2);Tam (\u00b0C);Va (V);Ia (A);Pa (Kw);Tm (\u00b0C);WindSpeed (m par s);AC-U (V);AC-P (W)");
                 bw3.newLine();
                 for (Info I : data) {
                     bw3.write(I.toString_39853_2120250746());
