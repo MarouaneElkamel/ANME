@@ -12,8 +12,10 @@ public class Info
     private String SENS0802_39888_IntSolIrr;
     private String SENS0802_39888_TmpMdul;
     private String SENS0802_39908_IntSolIrr;
-    private String SENS0802_39908_TmpAmb;
     private String SENS0802_39908_TmpMdul;
+
+    private String SENS0802_39908_TmpAmb;
+
     private String WRHF0U8G_2120250746_A_Ms_Amp;
     private String WRHF0U8G_2120250746_A_Ms_Vol;
     private String WRHF0U8G_2120250746_A_Ms_Watt;
