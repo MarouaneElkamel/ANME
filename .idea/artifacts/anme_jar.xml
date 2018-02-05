@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="anme:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/anme_jar</output-path>
+    <root id="archive" name="anme.jar">
+      <element id="module-output" name="anme" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -61,12 +61,16 @@ public class Info
         cal.set(12, Integer.parseInt(time[1]));
         cal.set(13, 0);
         this.setDate(cal.getTime());
+
         this.setSENS0802_39853_IntSolIrr(newline[14].trim());
         this.setSENS0802_39853_TmpMdul(newline[19].trim());
+
         this.setSENS0802_39888_IntSolIrr(newline[26].trim());
         this.setSENS0802_39888_TmpMdul(newline[31].trim());
+
         this.setSENS0802_39908_IntSolIrr(newline[38].trim());
         this.setSENS0802_39908_TmpMdul(newline[43].trim());
+
         this.setSENS0802_39908_TmpAmb(newline[40].trim());
         this.setWRHF0U8G_2120250746_A_Ms_Amp(newline[81].trim());
         this.setWRHF0U8G_2120250746_A_Ms_Vol(newline[82].trim());
@@ -291,13 +295,13 @@ public class Info
         s = s.concat(";");
         s = s.concat(this.getSENS0802_39908_TmpAmb());
         s = s.concat(";");
-        s = s.concat(this.getSENS0802_39853_TmpMdul());
-        s = s.concat(";");
         s = s.concat(this.getWRHF0U8G_2120250746_A_Ms_Amp());
         s = s.concat(";");
         s = s.concat(this.getWRHF0U8G_2120250746_A_Ms_Vol());
         s = s.concat(";");
         s = s.concat(this.getWRHF0U8G_2120250746_A_Ms_Watt());
+        s = s.concat(";");
+        s = s.concat(this.getSENS0802_39853_TmpMdul());
         s = s.concat(";");
         s = s.concat(this.getWRHF0U8G_2120250746_GridMs_PhV_phsA());
         s = s.concat(";");
@@ -312,13 +316,13 @@ public class Info
         s = s.concat(";");
         s = s.concat(this.getSENS0802_39908_TmpAmb());
         s = s.concat(";");
-        s = s.concat(this.getSENS0802_39888_TmpMdul());
-        s = s.concat(";");
         s = s.concat(this.getWRST1Y5D_305001998_A_Ms_Amp());
         s = s.concat(";");
         s = s.concat(this.getWRST1Y5D_305001998_A_Ms_Vol());
         s = s.concat(";");
         s = s.concat(this.getWRST1Y5D_305001998_A_Ms_Watt());
+        s = s.concat(";");
+        s = s.concat(this.getSENS0802_39888_TmpMdul());
         s = s.concat(";");
         s = s.concat(this.getWRST1Y5D_305001998_GridMs_PhV_phsA());
         s = s.concat(";");
@@ -342,13 +346,13 @@ public class Info
         s = s.concat(";");
         s = s.concat(this.getSENS0802_39908_TmpAmb());
         s = s.concat(";");
-        s = s.concat(this.getSENS0802_39908_TmpMdul());
-        s = s.concat(";");
         s = s.concat(this.getWRST285D_305022216_A_Ms_Amp());
         s = s.concat(";");
         s = s.concat(this.getWRST285D_305022216_A_Ms_Vol());
         s = s.concat(";");
         s = s.concat(this.getWRST285D_305022216_A_Ms_Watt());
+        s = s.concat(";");
+        s = s.concat(this.getSENS0802_39908_TmpMdul());
         s = s.concat(";");
         s = s.concat(this.getWRST285D_305022216_GridMs_PhV_phsA());
         s = s.concat(";");
